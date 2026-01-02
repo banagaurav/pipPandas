@@ -25,5 +25,28 @@ df = pd.read_csv(r"D:\Code\PipPandas\world_population.csv")
 
 # print(df)
 
-exDf = pd.read_excel(r"D:\Code\PipPandas\world_population_excel_workbook.xlsx")
-print(exDf)
+# by default this returns first 5 and last 5 records and of first sheet ,
+# if we want the data of sheets we want to have add sheet_name = ''   
+exDf = pd.read_excel(r"D:\Code\PipPandas\world_population_excel_workbook.xlsx", sheet_name='Sheet1')
+# print(exDf)
+
+# changing settings :
+# pd.set_option('display.max.rows',235)
+
+# looking at info of data 
+# exDf.info()
+# df.info()
+
+# looking the shape of dataframe
+# print(df.shape)
+
+# looking only a column in df['Column Name']
+# print(df['Rank'])
+
+# first 5 records
+print(df.head(100)) # giving value eg. head(100) will return first 100 records
+
+# last 5 records
+print(df.tail())
+
+
