@@ -41,3 +41,4 @@ print(df[df['Rank']< 10].sort_values(by = 'Rank', ascending=True))
 
 # too order by using multiple columns we need to give column name in by as a list 
 # such as .sort_values(by = ['column1','column2'])
+
